@@ -1,0 +1,157 @@
+   /* Container styling */
+   .education {
+       /* Adjust these as per your design */
+       padding-top: 4rem;
+       padding-bottom: 4rem;
+   }
+
+   .education__name {
+       font-size: 1rem;
+       color: var(--clr-slate400);
+   }
+
+   .education__info {
+
+       font-size: 1rem;
+       color: var(--clr-slate600);
+   }
+
+
+   .education__title {
+       align-self: flex-start;
+       /* Align this item to the start within its container */
+
+       /* Align content at the start */
+       margin-bottom: 2rem;
+       font-size: var(--size-4xl);
+       color: var(--clr-light);
+
+   }
+
+   .education__content {
+       /* Flex container for content alignment */
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       /* Center items horizontally */
+       gap: 2rem;
+       /* Vertical gap between elements */
+   }
+
+   /* Certificate container styling */
+   .education__certificates {
+       /* Flex container for certificates */
+       display: flex;
+       flex-wrap: wrap;
+       /* Wrap items to new row if necessary */
+       justify-content: center;
+       /* Center items horizontally */
+       gap: 2rem;
+       /* Gap between certificates */
+   }
+
+   /* Individual certificate styling */
+   .education__certificate {
+       /* Container for each certificate */
+       display: flex;
+       align-items: center;
+       /* Center items vertically */
+       gap: 1rem;
+       /* Gap between logo and details */
+       padding: 1rem;
+       /* Padding around each certificate */
+       border: 1px solid #ccc;
+       /* Optional: Border for each certificate */
+       border-radius: 0.5rem;
+       /* Optional: Rounded corners */
+       max-width: 750px;
+       /* Maximum width of each certificate */
+   }
+
+   .education__logo img {
+       /* Ensure logo fills its container */
+       width: 100%;
+       /* Make the image fill its container */
+       height: auto;
+       /* Maintain aspect ratio */
+       min-width: 300px;
+       /* Minimum width for the image */
+   }
+
+   /* Early and Bachelor education styling */
+   .education__early,
+   .education__degree {
+       font-size: 1.3rem;
+       color: var(--clr-slate400);
+       /* Container for early and bachelor education */
+       max-width: 600px;
+       /* Limit width of text content */
+       text-align: center;
+       /* Center text horizontally */
+       margin-top: 2rem;
+       /* Optional: Top margin */
+   }
+
+   /* Subtitle styling */
+   .education__subtitle {
+       /* Additional styling for subtitles */
+       margin-top: 3rem;
+       /* Optional: Top margin */
+       font-size: 1.7rem;
+       /* Adjust font size as needed */
+       font-weight: bold;
+       /* Optional: Bold text */
+   }
+
+   /* Additional utility classes */
+   .text-center {
+       /* Utility class for text alignment */
+       text-align: center;
+   }
+
+   @media (min-width: 768px) {
+
+       .education__name {
+           font-size: 1.3rem;
+           color: var(--clr-slate400);
+       }
+
+       .education__info {
+
+           font-size: 1.3rem;
+           color: var(--clr-slate600);
+       }
+
+       .education__subtitle {
+           margin-top: 3rem;
+           font-size: 1.9rem;
+           font-weight: bold;
+       }
+
+       /* Early and Bachelor education styling */
+       .education__early,
+       .education__degree {
+           font-size: 1.6rem;
+           color: var(--clr-slate400);
+           /* Container for early and bachelor education */
+           max-width: 600px;
+           /* Limit width of text content */
+           text-align: center;
+           /* Center text horizontally */
+           margin-top: 2rem;
+           /* Optional: Top margin */
+       }
+
+   }
+
+   /* lg */
+   /* @media (min-width: 1024px) {} */
+
+   /* xl */
+   @media (min-width: 1280px) {
+       .education__title {
+           margin-bottom: 2rem;
+           font-size: var(--size-5xl);
+           color: var(--clr-light);
+       }
+   }

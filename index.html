@@ -7,21 +7,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,401,400,700&display=swap" rel="stylesheet">
   <link href="./output/output.css" rel="stylesheet">
-  <title>Dev server</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Portfolio Webstire</title>
 
 </head>
 
 <body>
 
   <header class="container header mx-auto  flex justify-between items-center">
-    <a class="m-0 text-white text-2xl font-semibold header__anchor" href="#">My Portfolio</a>
 
+    <a class="m-0 text-white text-2xl font-semibold header__anchor " href="#">My Portfolio</a>
+    <a href="https://drive.google.com/uc?export=download&id=16NK2BsXY6UWGohn56SzYB7SBaguVjsOx"
+      class="absolute mt-6 inline-block bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600  top-14 left-0 "
+      download>Download CV</a>
     <nav>
 
 
-      <ul class="flex space-x-5 header__menu">
-        <li class="header__item"><a class="text-white text-center header__link  " href="#">Home</a></li>
+      <ul class="flex space-x-3   header__menu ">
+        <li class="header__item "><a class="text-white text-center header__link  " href="#">Home</a></li>
         <li class="header__item"><a class="text-white header__link " href="#about">About</a></li>
+        <li class="header__item "><a class="text-white header__link " href="#Education">Education</a></li>
+        <li class="header__item"><a class="text-white header__link " href="#Experience">Experience</a></li>
+
         <li class="header__item"><a class="text-white header__link " href="#featured">work</a></li>
 
         <li class="header__item"><a class="text-white header__link " href="#contact">Contact</a></li>
@@ -88,12 +95,28 @@
 
           </a>
         </li>
+
         <li class="menu-item"><a id="light__toggle" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
               fill="currentColor" class="w-10 h-10 pl-2 pt-2 header__sun">
               <path
                 d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
             </svg>
           </a></li>
+        <li class="menu-item">
+          <a href="#education">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 pl-2 pt-2">
+              <path
+                d="M12 2L1 9l11 7 11-7-11-7zm0 2.236l7.8 4.964-7.8 4.964-7.8-4.964L12 4.236zM12 13.076l4.668 2.976L12 18.816l-4.668-2.764L12 13.076z" />
+            </svg>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#experiences">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 pl-2 pt-2">
+              <path d="M3 5h18v14H3V5zm1 2v10h16V7H4zm4 1h8v2H8V8zm0 3h8v2H8v-2z" />
+            </svg>
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -170,6 +193,113 @@
     </section>
 
 
+
+    <section id="education" class="education container section">
+      <div class="education__content">
+        <h2 class="education__title">Education</h2>
+        <h3 class="education__subtitle">Certifications</h3>
+        <div class="education__certificates">
+          <div class="education__certificate">
+            <div class="education__logo">
+              <img src="public/backend.PNG" class="object-contain" alt="IBM Logo">
+            </div>
+            <div class="education__details">
+              <h4 class="education__name">Back-end Apps with Node.js and Express by IBM</h4>
+              <p class="education__info">ID: KXJMLRTBLNZF</p>
+            </div>
+          </div>
+          <div class="education__certificate">
+            <div class="education__logo">
+              <img src="public/Michigan.PNG" alt="University of Michigan Logo">
+            </div>
+            <div class="education__details">
+              <h4 class="education__name">Intermediate PostgreSQL-University of Michigan</h4>
+              <p class="education__info">ID: E96QYRT6DWDA</p>
+            </div>
+          </div>
+          <div class="education__certificate">
+            <div class="education__logo">
+              <img src="public/AWS.PNG" alt="AWS Logo">
+            </div>
+            <div class="education__details">
+              <h4 class="education__name">AWS Cloud Practitioner Essentials</h4>
+              <p class="education__info">ID: LK8Z5SEJBDVS</p>
+            </div>
+          </div>
+          <div class="education__certificate">
+            <div class="education__logo">
+              <img src="public/971898_SFC_Shady Osama.jpg" alt="Scrum Logo">
+            </div>
+            <div class="education__details">
+              <h4 class="education__name">Scrum Fundamentals Certified “SFC”</h4>
+              <p class="education__info">Credential ID: 971898</p>
+            </div>
+          </div>
+          <div class="education__certificate">
+            <div class="education__logo">
+              <img src="public/WhatsApp Image 2023-04-07 at 2.13.57 PM.jpeg" alt="Flutter Logo">
+            </div>
+            <div class="education__details">
+              <h4 class="education__name">Flutter Course Completion (Raya Academy)</h4>
+            </div>
+          </div>
+
+
+        </div>
+
+        <h3 class="education__subtitle">Early Education</h3>
+        <div class="education__early">
+          <p>High School: College De Lasalle | Grade: <strong> 98%</strong></p>
+        </div>
+
+        <h3 class="education__subtitle">Bachelor Degree</h3>
+        <div class="education__degree">
+          <p>Computer Engineering</p>
+          <p>Faculty of Engineering - Ain Shams University | BE in the University of East London</p>
+          <p>Accumulative GPA: <strong>3.54</strong> (Equivalent to Excellent grade) | Graduated in 2024 with honors</p>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <section id="experiences" class="experience container section">
+      <h2 class="experience__title">Experience</h2>
+      <div class="experience__content">
+        <div class="experience__item">
+          <img class="experience__logo object-contain" src="public/Valeo_Logo.svg.png" alt="Valeo Logo" />
+          <div class="experience__details">
+            <h3 class="experience__position">Full Stack Engineer</h3>
+            <p class="experience__company">Valeo GISACC R&D Team</p>
+            <p class="experience__date">November 1, 2023 – Present</p>
+            <p class="experience__description">Developing full stack applications, and ensuring scalable, reliable, and
+              secure solutions. Managing projects infrastructure with Google Cloud (GCP), Terraform, and Jenkins.</p>
+          </div>
+        </div>
+        <div class="experience__item">
+          <img class="experience__logo_2" src="public/1630652652911.jpeg" alt="CREATIVEWAY AD Logo" />
+          <div class="experience__details">
+            <h3 class="experience__position">Flutter Developer</h3>
+            <p class="experience__company">CREATIVEWAY AD (CAD) and EFADA Academy</p>
+            <p class="experience__description">Designed software diagrams & architecture styles, developed all modules
+              for
+              the student vendor in the app.</p>
+          </div>
+        </div>
+        <div class="experience__item">
+          <img class="experience__logo_3" src="public/We_logo.svg.png" alt="WE Telecom Egypt Logo" />
+          <div class="experience__details">
+            <h3 class="experience__position">DevOps Intern</h3>
+            <p class="experience__company">WE Telecom Egypt</p>
+            <p class="experience__description">Used Google Cloud for setting up the CI/CD pipeline, storing Docker
+              images,
+              and automating software updates.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="featured" class="featured container section">
       <h3 class="featured__subtitle">Featured projects</h3>

@@ -9,8 +9,11 @@ import '../styles/components/work.css'
 import '../styles/components/contact.css'
 import '../styles/components/footer.css'
 import '../styles/utils.css'
+import '../styles/components/exp.css'
+import '../styles/components/education.css'
 import { toggle_light } from './components/light_toggle';
 import { lazyLoading } from './components/lazy_loading'
+
 
 const textElements = document.querySelectorAll(".animated-text");
 
